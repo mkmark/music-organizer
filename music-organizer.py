@@ -1,4 +1,4 @@
-"""Organize music from <src> to <dest> in format of /<Artist>/<Album>/<Title>.<extension>"""
+"""Organize music from <src> to <dest> in format of <Artist>\\<Album>\\<Title>.<extension>"""
 
 import taglib
 from pathlib import Path
@@ -21,7 +21,7 @@ def make_string_windows_compatible(_str):
 def main():
     # parse args
     parser = argparse.ArgumentParser(description="""
-    This script organize music from <src> to <dest> in format of /<Artist>/<Album>/<Title>.<extension>
+    This script organize music from <src> to <dest> in format of <Artist>\\<Album>\\<Title>.<extension>
     """)
     parser.add_argument("-s --src", \
                         dest = "SRC", \
