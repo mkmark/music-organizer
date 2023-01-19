@@ -40,7 +40,7 @@ def main():
     # parse args
     parser = argparse.ArgumentParser(
         description="""
-    This script organize music from <src> to <dst> in format of <Artist>\\<Album>\\<Title>.<extension>
+    This script organize music from {SRC} to {DEST} in format of {Artist}\\{Album}\\{Title}.{extension}
     """
     )
     parser.add_argument(
